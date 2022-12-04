@@ -10,7 +10,7 @@ import javafx.scene.Scene;
 
 public class MainMenu extends Application{
     private Stage window;
-    private Scene mainMenuScene, playingScene;
+    private Scene mainMenuScene;
 
     // calls the start Method in the Application interface
     public static void main(String[] args){
@@ -32,7 +32,7 @@ public class MainMenu extends Application{
         StackPane mainMenuLayout = new StackPane();
         mainMenuLayout.getChildren().addAll(playBtn);
         mainMenuLayout.setStyle("-fx-background-color: #000000");
-        Scene mainMenuScene = new Scene(mainMenuLayout, 600, 600);
+        mainMenuScene = new Scene(mainMenuLayout, 600, 600);
 
         window.setScene(mainMenuScene);
         window.show();

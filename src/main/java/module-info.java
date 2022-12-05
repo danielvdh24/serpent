@@ -1,8 +1,8 @@
-module com.example.projectserpent {
+module com.projectserpent {
     requires javafx.controls;
     requires javafx.fxml;
 
 
-    opens com.example.projectserpent.gui to javafx.fxml;
-    exports com.example.projectserpent.gui;
+    opens com.projectserpent.frontend to javafx.fxml;
+    exports com.projectserpent.frontend;
 }

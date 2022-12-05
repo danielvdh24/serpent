@@ -1,4 +1,4 @@
-package com.example.projectserpent.gui;
+package com.projectserpent.frontend;
 
 import javafx.application.Application;
 import javafx.scene.layout.Background;

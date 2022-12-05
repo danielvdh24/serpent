@@ -1,4 +1,4 @@
-package com.example.projectserpent.logic;
+package com.projectserpent.backend;
 
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;

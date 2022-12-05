@@ -1,8 +1,8 @@
-package com.example.projectserpent.gui;
+package com.projectserpent.frontend;
 
-import com.example.projectserpent.logic.Snake;
-import com.example.projectserpent.logic.GameLoop;
-import com.example.projectserpent.logic.Grid;
+import com.projectserpent.backend.Snake;
+import com.projectserpent.backend.GameLoop;
+import com.projectserpent.backend.Grid;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 import javafx.scene.layout.StackPane;

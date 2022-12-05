@@ -1,4 +1,4 @@
-package com.example.projectserpent.logic;
+package com.projectserpent.backend;
 
 public class Tile {
     private final int x;    // The X coordinate

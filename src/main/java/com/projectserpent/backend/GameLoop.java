@@ -1,6 +1,6 @@
-package com.example.projectserpent.logic;
+package com.projectserpent.backend;
 
-import com.example.projectserpent.gui.Painter;
+import com.projectserpent.frontend.Painter;
 import javafx.scene.canvas.GraphicsContext;
 
 public class GameLoop implements Runnable {

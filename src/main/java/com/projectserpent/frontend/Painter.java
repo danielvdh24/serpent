@@ -1,12 +1,12 @@
-package com.example.projectserpent.gui;
+package com.projectserpent.frontend;
 
-import com.example.projectserpent.logic.Consumable;
-import com.example.projectserpent.logic.Grid;
-import com.example.projectserpent.logic.Tile;
-import com.example.projectserpent.logic.Snake;
+import com.projectserpent.backend.Consumable;
+import com.projectserpent.backend.Grid;
+import com.projectserpent.backend.Tile;
+import com.projectserpent.backend.Snake;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import static com.example.projectserpent.logic.Grid.SIZE;
+import static com.projectserpent.backend.Grid.SIZE;
 
 public class Painter {
     public static void paint(Grid grid, GraphicsContext gc) {

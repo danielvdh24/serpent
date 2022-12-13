@@ -3,6 +3,7 @@ package com.projectserpent.backend;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
+
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Random;
@@ -13,6 +14,8 @@ public class Grid {
     public static final int SIZE = 30;
     private final int columns;
     private final int rows;
+
+    private int score; //new attribute to grid to keep track of score
 
     private Snake snake;            // instantiating a Snake object.
     private Consumable consumable;  // instantiating a Consumable object.
@@ -28,6 +31,7 @@ public class Grid {
 
         // Creates a new Consumable in a random Tile.
         consumable = new Consumable(getRandomTile());
+
     }
 
     // This is the logic behind the snake "wrapping" around the screen.
@@ -55,6 +59,7 @@ public class Grid {
     public void update() {
         if (consumable.getTile().equals(snake.getHead())) {
             snake.extend();
+            score++;
             consumable.setTile(getRandomTile());
         } else {
             snake.move();
@@ -79,5 +84,10 @@ public class Grid {
     }
     public Consumable getFood() {
         return consumable;
+    }
+
+    //displays current score
+    public int scoreDisplay() {
+        return score;
     }
 }

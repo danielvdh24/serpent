@@ -1,12 +1,13 @@
-package com.projectserpent.frontend;
+package com.projectserpent.frontend.painter;
+
+import com.projectserpent.backend.*;
 
 import com.projectserpent.backend.Consumable;
 import com.projectserpent.backend.Grid;
-import com.projectserpent.backend.Tile;
 import com.projectserpent.backend.Snake;
+import com.projectserpent.backend.Tile;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.paint.Color;
-import static com.projectserpent.backend.Grid.SIZE;
 
 public class Painter {
     public static void paint(Grid grid, GraphicsContext gc) {
@@ -28,17 +29,22 @@ public class Painter {
 
         // Formatting Current Score Text
         gc.setFill(Color.BEIGE);
-        gc.fillText("Score : " + snake.getTiles().size(), 10, 590);
+        gc.fillText("Score : " + grid.scoreDisplay(), 10, 590);
     }
 
     private static void paintTile(Tile tile, GraphicsContext gc) {
-        gc.fillRect(tile.getX() * SIZE, tile.getY() * SIZE, SIZE, SIZE);
+        gc.fillRect(tile.getX() * Grid.SIZE, tile.getY() * Grid.SIZE, Grid.SIZE, Grid.SIZE);
     }
 
     // Prompt to restart the game when the Snake dies.
     /** This is where we will need to enter a username which would then get saved into the Leaderboard. */
-    public static void paintResetMessage(GraphicsContext gc) {
+    public static void paintResetMessage(GraphicsContext gc, Grid grid) {
         gc.setFill(Color.ORANGERED);
-        gc.fillText("Hit ENTER to Restart", 300, 300);
+        gc.fillText("YOU DIED", 250, 300);
+        gc.setFill(Color.GREEN);
+        gc.fillText("Score: " + grid.scoreDisplay(), 250, 320);
+        gc.fillText("PRESS 'ENTER' TO CONTINUE", 250, 340);
+
+
     }
 }

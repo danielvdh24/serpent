@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="113.0" layoutY="14.0" prefHeight="92.0" prefWidth="374.0" style="-fx-background-color: RED;" text="SAVE YOUR SCORE">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <TextField fx:id="usernameInputField" layoutX="217.0" layoutY="225.0" prefHeight="25.0" prefWidth="182.0" />
+      <Label layoutX="78.0" layoutY="229.0" text="Please enter your name:" textFill="WHITE" />
+      <Button layoutX="217.0" layoutY="266.0" mnemonicParsing="false" onAction="#saveScoreAsKnown" text="Submit" />
+      <Button layoutX="278.0" layoutY="266.0" mnemonicParsing="false" onAction="#saveScoreAsAnonymous" text="Save as Anonymous" />
+      <Label fx:id="score" layoutX="278.0" layoutY="175.0" text="Label" textFill="WHITE" />
+
+   </children>
+</Pane>

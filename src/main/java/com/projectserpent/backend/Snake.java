@@ -16,6 +16,12 @@ public class Snake {
     private int xVelocity;
     private int yVelocity;
 
+    private final int RIGHT = 1;
+    private final int LEFT = -1;
+    private final int UP = -1;
+    private final int DOWN = 1;
+
+
     // Constructor for the snake, it receives the Grid it will exist in, and a Tile to start with.
     public Snake(Grid grid, Tile initialTile) {
         this.length = 1;
@@ -60,6 +66,9 @@ public class Snake {
     public List<Tile> getTiles() {
         return tiles;
     }
+    public int getSize() {
+        return tiles.size();
+    }
 
     // Method which returns the safe property of the snake, note the OR between safe and length.
     // This exists because when the game starts the snake only has 1 Tile, so it is unsafe by default.
@@ -96,23 +105,23 @@ public class Snake {
     // words, while the snake moves up it cannot suddenly go down and hit itself, this is why the goUp method
     // has an if statement which checks the yVelocity and won't allow the snake to move into itself.
     public void goUp() {
-        if (yVelocity == 1 && length > 1) return;
+        if (yVelocity == DOWN) return;
         xVelocity = 0;
-        yVelocity = -1;
+        yVelocity = UP;
     }
     public void goDown() {
-        if (yVelocity == -1 && length > 1) return;
+        if (yVelocity == UP) return;
         xVelocity = 0;
-        yVelocity = 1;
+        yVelocity = DOWN;
     }
     public void goLeft() {
-        if (xVelocity == 1 && length > 1) return;
-        xVelocity = -1;
+        if (xVelocity == RIGHT ) return;
+        xVelocity = LEFT;
         yVelocity = 0;
     }
     public void goRight() {
-        if (xVelocity == -1 && length > 1) return;
-        xVelocity = 1;
+        if (xVelocity == LEFT ) return;
+        xVelocity = RIGHT;
         yVelocity = 0;
     }
 }

@@ -1,6 +1,7 @@
 package com.projectserpent.backend;
 
-import com.projectserpent.frontend.Painter;
+
+import com.projectserpent.frontend.painter.Painter;
 import javafx.scene.canvas.GraphicsContext;
 
 public class GameLoop implements Runnable {
@@ -33,7 +34,8 @@ public class GameLoop implements Runnable {
 
             if (!grid.getSnake().isSafe()) {
                 pause();
-                Painter.paintResetMessage(context); //this is where the death message happens
+                Painter.paintResetMessage(context, grid); //this is where the death message happens
+
                 break;
             }
             time = System.currentTimeMillis() - time;
@@ -53,6 +55,9 @@ public class GameLoop implements Runnable {
 
     public void pause() {
         paused = true;
+    }
+    public void unPause() {
+        paused = false;
     }
 
     public boolean isPaused() {return paused;}

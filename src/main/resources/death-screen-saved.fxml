@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label alignment="CENTER" layoutX="113.0" layoutY="14.0" prefHeight="92.0" prefWidth="374.0" style="-fx-background-color: GREEN;" text="THANK YOU!">
+            <font>
+                <Font size="42.0" />
+            </font>
+        </Label>
+        <Label layoutX="248.0" layoutY="231.0" text="Your score is saved!" textFill="WHITE" />
+        <Button layoutX="173.0" layoutY="279.0" mnemonicParsing="false" onAction="#startGame" text="New Game" />
+        <Button layoutX="352.0" layoutY="279.0" mnemonicParsing="false" onAction="#switchToMainMenu" text="Back to Main Menu" />
+      <Button layoutX="260.0" layoutY="279.0" mnemonicParsing="false" onAction="#switchToLeaderboard" text="Leaderboard" />
+    </children>
+</Pane>

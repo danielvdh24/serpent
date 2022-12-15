@@ -6,17 +6,13 @@ import com.projectserpent.backend.Snake;
 import com.projectserpent.frontend.painter.Painter;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.StackPane;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class GameController extends ParentController {
+public class GameScreenController extends ParentController {
     private GameLoop loop;
     private Grid grid;
 

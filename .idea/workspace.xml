@@ -4,24 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac74acb5-b255-4063-bff6-c1214dcb6edc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/UtilityClasses/ParseAndLoadFXML.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/UtilityClasses/ParseAndLoadFXML.java" afterDir="false" />
+    <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenSavedController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenSavedController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/GameScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/GameScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/ParentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/ParentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/TestController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/death-screen-saved.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/death-screen-saved.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/death-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/death-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/game-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/game-screen.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main-menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "last_opened_file_path": "C:/Users/Erik/Desktop/SnajeGitTest/team7-snakegame"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Erik/Desktop/SnajeGitTest/team7-snakegame&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.projectserpent.frontend" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StartApplication">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.projectserpent.Main" />
       <module name="team7-snakegame" />

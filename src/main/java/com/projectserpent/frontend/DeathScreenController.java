@@ -4,7 +4,6 @@ import com.projectserpent.backend.LeaderboardList;
 import com.projectserpent.backend.UserScore;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -14,7 +13,7 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 public class DeathScreenController extends ParentController{
-    public Label ýourScore;
+    public Label yourScore;
     private SimpleStringProperty finalName;
     private static SimpleIntegerProperty finalScore;
     @FXML
@@ -44,6 +43,6 @@ public class DeathScreenController extends ParentController{
 
     public void loadScore() {
         finalScore = new SimpleIntegerProperty(getScore());
-        ýourScore.setText("Your score: " + getScore());
+        yourScore.setText("Your score: " + getScore());
     }
 }

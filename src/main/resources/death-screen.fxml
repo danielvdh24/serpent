@@ -15,7 +15,7 @@
       <Label layoutX="78.0" layoutY="229.0" text="Please enter your name:" textFill="WHITE" />
       <Button layoutX="217.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsKnown" text="Submit" />
       <Button layoutX="278.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsAnonymous" text="Save as Anonymous" />
-      <Label fx:id="ýourScore" alignment="CENTER" layoutX="217.0" layoutY="175.0" text="Label" textFill="WHITE" />
+      <Label fx:id="yourScore" alignment="CENTER" layoutX="217.0" layoutY="175.0" text="Label" textFill="WHITE" />
 
    </children>
 </Pane>

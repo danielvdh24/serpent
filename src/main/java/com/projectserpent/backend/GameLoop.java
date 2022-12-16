@@ -1,6 +1,5 @@
 package com.projectserpent.backend;
 
-
 import com.projectserpent.frontend.painter.Painter;
 import javafx.scene.canvas.GraphicsContext;
 

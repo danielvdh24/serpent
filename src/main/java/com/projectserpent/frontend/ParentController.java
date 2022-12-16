@@ -9,8 +9,9 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class ParentController {
+public  class ParentController {
 
+    private static int score;
     /*
     This method is called to redirect to a different scene
      */
@@ -22,5 +23,13 @@ public class ParentController {
         stage.show();
     }
 
-    
+    public void setScore(int score) {
+        ParentController.score = score;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+
 }

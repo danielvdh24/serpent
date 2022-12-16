@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 import java.net.URL;
 
+import static java.util.Objects.requireNonNull;
+
 /***
  * Utility class for loading fxml
  */
@@ -18,6 +20,7 @@ public final class ParseAndLoadFXML {
     /* method uses classloader to find location of FXML urls
      */
     public static URL getFxmlUrl(String url) {
+        requireNonNull(url);
         ClassLoader fxml = ParseAndLoadFXML.class.getClassLoader();
         return fxml.getResource(url);
     }

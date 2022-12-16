@@ -22,4 +22,6 @@ public class LeaderboardList {
             System.out.println("Name: " + list.getUsername() + ". Score: " + list.getScore());
         }
     }
+
+
 }

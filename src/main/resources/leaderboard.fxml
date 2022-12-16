@@ -4,16 +4,16 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.LeaderboardController">
    <children>
-      <Button layoutX="447.0" layoutY="1.0" mnemonicParsing="false" onAction="#switchToMainMenu" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: Lightgreen;" text="Back to Main Menu" />
+      <Button layoutX="447.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#switchToMainMenu" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: Lightgreen;" text="Back to Main Menu" />
       <TableView fx:id="leaderboardTable" layoutY="39.0" prefHeight="436.0" prefWidth="600.0">
         <columns>
           <TableColumn fx:id="nameColumn" prefWidth="300.0" resizable="false" text="Username" />
           <TableColumn fx:id="scoreColumn" prefWidth="299.0" text="Score" />
         </columns>
       </TableView>
-      <Button layoutY="475.0" mnemonicParsing="false" onAction="#startGame" prefHeight="126.0" prefWidth="600.0" style="-fx-background-color: Lightgreen;" text="Start a new game" />
+      <Button layoutY="475.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="126.0" prefWidth="600.0" style="-fx-background-color: Lightgreen;" text="Start a new game" />
       <Label alignment="CENTER" layoutX="-4.0" layoutY="1.0" prefHeight="38.0" prefWidth="451.0" style="-fx-background-color: Lightblue;" text="TOP 10 Scores" textAlignment="JUSTIFY">
          <font>
             <Font size="18.0" />

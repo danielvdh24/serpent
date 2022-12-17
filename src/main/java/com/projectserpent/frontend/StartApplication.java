@@ -11,8 +11,11 @@ import java.io.IOException;
 
 public final class StartApplication extends Application {
     @Override
-    public void start(Stage primaryStage) throws IOException {
+    public void init(){
         LeaderboardList.loadJson();
+    }
+    @Override
+    public void start(Stage primaryStage) throws IOException {
         Object mainMenu = ParseAndLoadFXML.returnFxmlFile("main-menu.fxml");
         Scene scene = new Scene((Parent) mainMenu);
         primaryStage.setResizable(false);

@@ -15,8 +15,6 @@ import java.io.IOException;
 public class DeathScreenController extends ParentController{
     @FXML
     public Label yourScore;
-    private SimpleStringProperty finalName;
-    private static SimpleIntegerProperty finalScore;
     @FXML
     public TextField usernameInputField;
     private UserScore userScore;
@@ -29,14 +27,12 @@ public class DeathScreenController extends ParentController{
     }
 
     public void saveScoreAsKnown(MouseEvent event) throws IOException {
-        finalName = new SimpleStringProperty();
         userScore = new UserScore(usernameInputField.getText(), getScore());
         leaderboard.addScore(userScore);
         leaderboard.printLeaderboard();
         sceneSwitch(event, "death-screen-saved.fxml");
     }
     public void saveScoreAsAnonymous(MouseEvent event) throws IOException {
-        finalName = new SimpleStringProperty("Anonymous");
         userScore = new UserScore("Anonymous", getScore());
         leaderboard.addScore(userScore);
         leaderboard.printLeaderboard();
@@ -44,7 +40,6 @@ public class DeathScreenController extends ParentController{
     }
 
     public void loadScore() {
-        finalScore = new SimpleIntegerProperty(getScore());
         yourScore.setText("Your score: " + getScore());
     }
 }

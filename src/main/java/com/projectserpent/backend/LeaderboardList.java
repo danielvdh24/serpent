@@ -45,15 +45,6 @@ public class LeaderboardList implements Serializable {
         }
     }
 
-    public File openFile(){
-        try {
-            File file = new File(String.valueOf(new FileReader("src/main/resources/leaderboard.json")));
-            return file;
-        } catch (FileNotFoundException exception) {
-            throw new RuntimeException(exception);
-        }
-    }
-
     public ArrayList<UserScore> getLeaderboard(){
         return leaderboard;
     }

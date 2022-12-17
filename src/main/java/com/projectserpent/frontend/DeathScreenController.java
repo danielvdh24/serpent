@@ -13,6 +13,7 @@ import javafx.scene.input.MouseEvent;
 import java.io.IOException;
 
 public class DeathScreenController extends ParentController{
+    @FXML
     public Label yourScore;
     private SimpleStringProperty finalName;
     private static SimpleIntegerProperty finalScore;
@@ -26,6 +27,7 @@ public class DeathScreenController extends ParentController{
     public void initialize() {
         loadScore();
     }
+
     public void saveScoreAsKnown(MouseEvent event) throws IOException {
         finalName = new SimpleStringProperty(usernameInputField.getText());
         userScore = new UserScore(finalName, finalScore);

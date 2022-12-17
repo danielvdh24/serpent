@@ -24,12 +24,12 @@ public class UserScore implements Comparable<UserScore> {
         this.username.set(username);
     }
 
-    public int getScore() {
-        return score.get();
-    }
-
     public SimpleIntegerProperty scoreProperty() {
         return score;
+    }
+
+    public int getScore() {
+        return score.get();
     }
 
     public void setScore(int score) {

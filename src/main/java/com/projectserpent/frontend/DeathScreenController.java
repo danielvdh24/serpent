@@ -29,15 +29,15 @@ public class DeathScreenController extends ParentController{
     }
 
     public void saveScoreAsKnown(MouseEvent event) throws IOException {
-        finalName = new SimpleStringProperty(usernameInputField.getText());
-        userScore = new UserScore(finalName, finalScore);
+        finalName = new SimpleStringProperty();
+        userScore = new UserScore(usernameInputField.getText(), getScore());
         leaderboard.addScore(userScore);
         leaderboard.printLeaderboard();
         sceneSwitch(event, "death-screen-saved.fxml");
     }
     public void saveScoreAsAnonymous(MouseEvent event) throws IOException {
         finalName = new SimpleStringProperty("Anonymous");
-        userScore = new UserScore(finalName, finalScore);
+        userScore = new UserScore("Anonymous", getScore());
         leaderboard.addScore(userScore);
         leaderboard.printLeaderboard();
         sceneSwitch(event, "death-screen-saved.fxml");

@@ -1,39 +1,29 @@
 package com.projectserpent.backend;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class UserScore implements Comparable<UserScore> {
-    private final SimpleStringProperty username;
-    private final SimpleIntegerProperty score;
+    private final String username;
+    private int score;
 
-    public UserScore(SimpleStringProperty username, SimpleIntegerProperty score) {
+    public UserScore(@JsonProperty("username") String username, @JsonProperty("score")int score) {
         this.username = username;
         this.score = score;
     }
 
-    public String getUsername() {
-        return username.get();
-    }
 
-    public SimpleStringProperty usernameProperty() {
+    public String getUsername() {
         return username;
     }
-
-    public void setUsername(String username) {
-        this.username.set(username);
-    }
-
-    public SimpleIntegerProperty scoreProperty() {
+    public int getScore() {
         return score;
     }
 
-    public int getScore() {
-        return score.get();
-    }
-
     public void setScore(int score) {
-        this.score.set(score);
+        this.score = score;
     }
 
     @Override

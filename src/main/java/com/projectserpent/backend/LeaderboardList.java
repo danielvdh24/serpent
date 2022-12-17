@@ -4,16 +4,20 @@ import java.io.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
+
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class LeaderboardList implements Serializable {
-    private ArrayList<UserScore> leaderboard = new ArrayList<UserScore>();
-    private ObjectMapper objectMapper = new ObjectMapper();
+    private static ArrayList<UserScore> leaderboard = new ArrayList<UserScore>();
+    private static ObjectMapper objectMapper = new ObjectMapper();
 
     private static String filePath = "src/main/resources/leaderboard.json";
-    File file = new File(filePath);
+    static File file = new File(filePath);
 
+    public LeaderboardList() {
 
+    }
     public void addScore(UserScore userScore){
         leaderboard.add(userScore);
         Collections.sort(leaderboard);
@@ -31,14 +35,12 @@ public class LeaderboardList implements Serializable {
             throw new RuntimeException(e);
         }
     }
-    private void openJson(){
-        try{
-            leaderboard = objectMapper.readValue(file, ArrayList.class);
-            //parse File
-            //load the leaderboards with data
-            //parser
-            //leaderboard.add(oldUserScore);
-        } catch (Exception e) {
+
+    public static void loadJson(){
+            try{
+                leaderboard = objectMapper.readValue(file, new TypeReference<>() {
+                });
+            } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }

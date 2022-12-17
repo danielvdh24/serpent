@@ -6,7 +6,7 @@ module com.example.projectserpent {
     exports com.projectserpent;
     opens com.projectserpent to javafx.base, javafx.fxml;
     exports com.projectserpent.backend;
-    opens com.projectserpent.backend to javafx.base, com.google.gson;
+    opens com.projectserpent.backend to javafx.base, com.fasterxml.jackson.databind;
     exports com.projectserpent.frontend;
     opens com.projectserpent.frontend to javafx.base, javafx.fxml;
     exports com.projectserpent.frontend.painter;

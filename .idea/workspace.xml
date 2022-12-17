@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaderboard.json" afterDir="false" />
     </list>
     <list id="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" name="Changes by Daniel" comment="">
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <list id="6033900c-221a-4374-b35e-2a50a3941786" name="Changes by Erik" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <list id="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" name="Changes by marko" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,27 +44,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/module-info.java">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="5" changelist="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" />
-        <range start1="6" end1="7" start2="8" end2="9" changelist="6033900c-221a-4374-b35e-2a50a3941786" />
-        <range start1="13" end1="13" start2="15" end2="16" changelist="192056ea-d273-456f-abd6-49ac9a655ce5" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="4" changelist="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" />
-        <range start1="4" end1="4" start2="6" end2="7" changelist="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" />
-        <range start1="5" end1="6" start2="8" end2="9" changelist="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" />
-        <range start1="7" end1="7" start2="10" end2="15" changelist="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" />
-        <range start1="14" end1="14" start2="22" end2="23" changelist="6033900c-221a-4374-b35e-2a50a3941786" />
-        <range start1="15" end1="15" start2="24" end2="53" changelist="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" />
-        <range start1="19" end1="19" start2="57" end2="58" changelist="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" />
-        <range start1="25" end1="26" start2="64" end2="64" changelist="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" />
-      </ranges>
-    </file>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -85,24 +63,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowRun.ShowToolbar": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/Erik/Desktop/SnajeGitTest/team7-snakegame",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Erik/Desktop/SnajeGitTest/team7-snakegame&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.projectserpent.frontend" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.StartApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.projectserpent.Main" />
       <module name="team7-snakegame" />
@@ -131,8 +109,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.StartApplication" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

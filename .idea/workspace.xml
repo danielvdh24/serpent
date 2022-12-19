@@ -5,14 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.io.FileReader@6e20ec3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/JSONArray.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaderboard.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main-menu.fxml" afterDir="false" />
     </list>
-    <list id="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" name="Changes by Daniel" comment="" />
-    <list id="6033900c-221a-4374-b35e-2a50a3941786" name="Changes by Erik" comment="" />
-    <list id="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" name="Changes by marko" comment="" />
+    <list id="a499bedd-80c7-409b-a495-008d08020e34" name="Changes by Daniel" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/MainMenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+    </list>
+    <list id="796d38d1-0607-4db1-a6c6-7e39b2f7ed3a" name="Changes by Rizwan Rafique" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="preventing-illegal-characters" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -114,6 +120,13 @@
       <option name="presentableId" value="Default" />
       <updated>1670864275732</updated>
       <workItem from="1671282747397" duration="6408000" />
+      <workItem from="1671483315659" duration="225000" />
+      <workItem from="1671483558298" duration="4505000" />
+      <workItem from="1671488095569" duration="41000" />
+      <workItem from="1671488155244" duration="126000" />
+      <workItem from="1671488291211" duration="3599000" />
+      <workItem from="1671492272442" duration="555000" />
+      <workItem from="1671492840015" duration="1307000" />
     </task>
     <servers />
   </component>

@@ -1,9 +1,7 @@
 package com.projectserpent.frontend;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
-
 import java.io.IOException;
 
 public class MainMenuController extends ParentController {
@@ -13,7 +11,10 @@ public class MainMenuController extends ParentController {
         sceneSwitch(event, "leaderboard.fxml");
     }
 
+    @FXML
     public void startGame(MouseEvent event) throws IOException {
         sceneSwitch(event, "game-screen.fxml");
     }
+
 }
+

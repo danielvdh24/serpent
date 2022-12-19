@@ -3,6 +3,7 @@ module com.example.projectserpent {
     requires javafx.fxml;
     requires com.fasterxml.jackson.databind;
     requires com.google.gson;
+    requires java.desktop;
     exports com.projectserpent;
     opens com.projectserpent to javafx.base, javafx.fxml;
     exports com.projectserpent.backend;

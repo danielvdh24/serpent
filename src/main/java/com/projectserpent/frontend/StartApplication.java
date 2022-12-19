@@ -1,6 +1,7 @@
 package com.projectserpent.frontend;
 
 import com.projectserpent.UtilityClasses.ParseAndLoadFXML;
+import com.projectserpent.backend.LeaderboardList;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -9,6 +10,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public final class StartApplication extends Application {
+    @Override
+    public void init(){
+        LeaderboardList leaderboard = new LeaderboardList();
+        leaderboard.loadJson();
+    }
     @Override
     public void start(Stage primaryStage) throws IOException {
         Object mainMenu = ParseAndLoadFXML.returnFxmlFile("main-menu.fxml");

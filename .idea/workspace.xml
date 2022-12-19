@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/GameLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/GameLoop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/death-screen.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/death-screen.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaderboard.json" afterDir="false" />
     </list>
+    <list id="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" name="Changes by Daniel" comment="" />
+    <list id="6033900c-221a-4374-b35e-2a50a3941786" name="Changes by Erik" comment="" />
+    <list id="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" name="Changes by marko" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +47,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2Ip2bEp9qjfrPgN6pc83OOMEJ40" />
   <component name="ProjectViewState">
@@ -54,9 +56,14 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ToolWindowRun.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Erik/Desktop/SnajeGitTest/team7-snakegame&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Erik/Desktop/SnajeGitTest/team7-snakegame&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -64,7 +71,7 @@
       <recent name="com.projectserpent.frontend" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.StartApplication">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.projectserpent.Main" />
       <module name="team7-snakegame" />
@@ -101,13 +108,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ac74acb5-b255-4063-bff6-c1214dcb6edc" name="Changes" comment="" />
+      <changelist id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="" />
       <created>1670864275732</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1670864275732</updated>
+      <workItem from="1671282747397" duration="6408000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -142,7 +153,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="newerikbranch" />
+                        <option value="stashedchangesbranch" />
                       </list>
                     </value>
                   </entry>

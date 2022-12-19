@@ -44,7 +44,5 @@ public class Painter {
         gc.setFill(Color.GREEN);
         gc.fillText("Score: " + grid.scoreDisplay(), 250, 320);
         gc.fillText("PRESS 'ENTER' TO CONTINUE", 250, 340);
-
-
     }
 }

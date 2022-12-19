@@ -36,7 +36,7 @@ public class LeaderboardList implements Serializable {
         }
     }
 
-    public static void loadJson(){
+    public void loadJson(){
             try{
                 leaderboard = objectMapper.readValue(file, new TypeReference<>() {
                 });

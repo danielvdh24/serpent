@@ -7,8 +7,6 @@
     <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/LeaderboardList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/DeathScreenController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/StartApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaderboard.json" afterDir="false" />
     </list>
@@ -155,7 +153,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="newerikbranch" />
+                        <option value="stashedchangesbranch" />
                       </list>
                     </value>
                   </entry>

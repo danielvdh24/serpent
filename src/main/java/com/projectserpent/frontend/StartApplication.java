@@ -12,7 +12,8 @@ import java.io.IOException;
 public final class StartApplication extends Application {
     @Override
     public void init(){
-        LeaderboardList.loadJson();
+        LeaderboardList leaderboard = new LeaderboardList();
+        leaderboard.loadJson();
     }
     @Override
     public void start(Stage primaryStage) throws IOException {

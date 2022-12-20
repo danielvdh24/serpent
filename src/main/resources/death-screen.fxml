@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
@@ -37,6 +39,13 @@
             <image>
                 <Image url="@AnonymousPressed.png"/>
             </image>
+            <effect>
+                <DropShadow radius="50.3025" width="182.21">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
         </ImageView>
         <ImageView fx:id="anonymousButton" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0"
                    pickOnBounds="true" preserveRatio="true">
@@ -49,6 +58,13 @@
             <image>
                 <Image url="@SubmitPressed.png"/>
             </image>
+            <effect>
+                <DropShadow radius="50.3025" width="182.21">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
         </ImageView>
         <ImageView fx:id="submitButtonNormal" fitHeight="43.0" fitWidth="132.0" layoutX="168.0" layoutY="326.0"
                    pickOnBounds="true" preserveRatio="true">

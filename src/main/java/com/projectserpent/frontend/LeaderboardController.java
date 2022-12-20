@@ -27,17 +27,9 @@ public class LeaderboardController extends DeathScreenController {
     public ImageView backButtonNormal;
     public ImageView backButtonPressed;
     public Label titleLabel;
-    public VBox scoreBox;
-    public Label nameOne;
-    public Label nameTwo;
-    public Label nameThree;
-    public Label nameFour;
-    public Label nameFive;
-    public Label nameSix;
-    public Label nameSeven;
-    public Label nameEight;
-    public Label nameNine;
-    public Label nameTen;
+    // public VBox scoreBox;
+    public Label nameOne, nameTwo, nameThree, nameFour, nameFive, nameSix, nameSeven, nameEight, nameNine, nameTen;
+    public Label scoreOne, scoreTwo, scoreThree, scoreFour, scoreFive, scoreSix, scoreSeven, scoreEight, scoreNine, scoreTen;
 
     @FXML
     public void switchToMainMenu(MouseEvent event) throws IOException {
@@ -54,6 +46,7 @@ public class LeaderboardController extends DeathScreenController {
         backButtonPressed.setVisible(false);
         Font.loadFont(getClass().getResource("/INVASION2000.TTF").toExternalForm(), 34);
         loadNameColumn();
+        loadScoreColumn();
     }
 
     public void loadLeaderboard() {
@@ -92,7 +85,16 @@ public class LeaderboardController extends DeathScreenController {
 
     }
     public void loadScoreColumn() {
-
+        scoreOne.setText(String.valueOf(scoreColumn.getCellObservableValue(0).getValue()));
+        scoreTwo.setText(String.valueOf(scoreColumn.getCellObservableValue(1).getValue()));
+        scoreThree.setText(String.valueOf(scoreColumn.getCellObservableValue(2).getValue()));
+        scoreFour.setText(String.valueOf(scoreColumn.getCellObservableValue(3).getValue()));
+        scoreFive.setText(String.valueOf(scoreColumn.getCellObservableValue(4).getValue()));
+        scoreSix.setText(String.valueOf(scoreColumn.getCellObservableValue(5).getValue()));
+        scoreSeven.setText(String.valueOf(scoreColumn.getCellObservableValue(6).getValue()));
+        scoreEight.setText(String.valueOf(scoreColumn.getCellObservableValue(7).getValue()));
+        scoreNine.setText(String.valueOf(scoreColumn.getCellObservableValue(8).getValue()));
+        scoreTen.setText(String.valueOf(scoreColumn.getCellObservableValue(9).getValue()));
     }
 
 }

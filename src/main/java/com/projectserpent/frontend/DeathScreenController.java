@@ -7,6 +7,7 @@ import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
 
@@ -19,10 +20,13 @@ public class DeathScreenController extends ParentController{
     public TextField usernameInputField;
     private UserScore userScore;
     protected static final LeaderboardList leaderboard = new LeaderboardList();
+    public ImageView submitPressed, submitButtonNormal, anonymousButton, anonymousPressed;
 
 
     @FXML
     public void initialize() {
+        submitPressed.setVisible(false);
+        anonymousPressed.setVisible(false);
         loadScore();
     }
 
@@ -39,7 +43,27 @@ public class DeathScreenController extends ParentController{
         sceneSwitch(event, "death-screen-saved.fxml");
     }
 
+    public void hoverSubmitButton(MouseEvent event) {
+        submitPressed.setVisible(true);
+        submitButtonNormal.setVisible(false);
+    }
+
+    public void stopHoverSubmitButton(MouseEvent event) {
+        submitPressed.setVisible(false);
+        submitButtonNormal.setVisible(true);
+    }
+
+    public void hoverAnonymousButton(MouseEvent event) {
+        anonymousPressed.setVisible(true);
+        anonymousButton.setVisible(false);
+    }
+
+    public void stopHoverAnonymousButton(MouseEvent event) {
+        anonymousPressed.setVisible(false);
+        anonymousButton.setVisible(true);
+    }
+
     public void loadScore() {
-        yourScore.setText("Your score: " + getScore());
+        yourScore.setText("YOUR SCORE: " + getScore());
     }
 }

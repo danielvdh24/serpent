@@ -1,21 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.DeathScreenController">
-   <children>
-      <Label alignment="CENTER" layoutX="113.0" layoutY="14.0" prefHeight="92.0" prefWidth="374.0" style="-fx-background-color: RED;" text="SAVE YOUR SCORE">
-         <font>
-            <Font size="42.0" />
-         </font>
-      </Label>
-      <TextField fx:id="usernameInputField" layoutX="217.0" layoutY="225.0" prefHeight="25.0" prefWidth="182.0" />
-      <Label layoutX="78.0" layoutY="229.0" text="Please enter your name:" textFill="WHITE" />
-      <Button layoutX="217.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsKnown" text="Submit" />
-      <Button layoutX="278.0" layoutY="266.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsAnonymous" text="Save as Anonymous" />
-      <Label fx:id="yourScore" alignment="CENTER" layoutX="217.0" layoutY="175.0" text="Label" textFill="WHITE" />
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+      prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png'); -fx-background-color: transparent;"
+      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.projectserpent.frontend.DeathScreenController">
+    <children>
+        <Label alignment="CENTER" layoutY="14.0" prefHeight="92.0" prefWidth="600.0"
+               style="-fx-background-color: transparent; -fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000; "
+               text="SAVE YOUR SCORE">
+            <font>
+                <Font size="42.0"/>
+            </font>
+        </Label>
+        <Label layoutX="155.0" layoutY="246.0" prefHeight="35.0" prefWidth="313.0"
+               style="-fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000;" text="ENTER YOUR NAME BELOW"
+               textFill="WHITE">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </Label>
+        <Label fx:id="yourScore" alignment="CENTER" layoutX="206.0" layoutY="147.0" prefHeight="35.0" prefWidth="212.0"
+               style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000;" textFill="WHITE">
+            <font>
+                <Font size="24.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="usernameInputField" layoutX="155.0" layoutY="288.0" prefHeight="25.0" prefWidth="313.0"
+                   style="-fx-background-color: rgba(69,8,238,0.36); -fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000;"/>
+        <ImageView fx:id="anonymousPressed" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@AnonymousPressed.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="anonymousButton" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@AnonymousButton.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="submitPressed" fitHeight="43.0" fitWidth="141.0" layoutX="168.0" layoutY="326.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@SubmitPressed.png"/>
+            </image>
+        </ImageView>
+        <ImageView fx:id="submitButtonNormal" fitHeight="43.0" fitWidth="132.0" layoutX="168.0" layoutY="326.0"
+                   pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@SubmitButton.png"/>
+            </image>
+        </ImageView>
+        <Button fx:id="anonymousSaveButton" layoutX="334.0" layoutY="326.0" mnemonicParsing="false"
+                onMouseClicked="#saveScoreAsAnonymous" onMouseEntered="#hoverAnonymousButton"
+                onMouseExited="#stopHoverAnonymousButton" prefHeight="35.0" prefWidth="98.0"
+                style="-fx-background-color: transparent;"/>
+        <Button fx:id="submitButton" layoutX="187.0" layoutY="326.0" mnemonicParsing="false"
+                onMouseClicked="#saveScoreAsKnown" onMouseEntered="#hoverSubmitButton"
+                onMouseExited="#stopHoverSubmitButton" prefHeight="35.0" prefWidth="98.0"
+                style="-fx-background-color: transparent;"/>
 
-   </children>
+    </children>
 </Pane>

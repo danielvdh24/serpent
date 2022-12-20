@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaderboard.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="" />
     <list id="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" name="Changes by Daniel" comment="" />
     <list id="6033900c-221a-4374-b35e-2a50a3941786" name="Changes by Erik" comment="" />
     <list id="eaae6d83-eaae-4c49-a5d3-88fd201fe32d" name="Changes by marko" comment="" />
@@ -128,6 +122,12 @@
       <workItem from="1671549372077" duration="481000" />
       <workItem from="1671549889793" duration="462000" />
       <workItem from="1671550365206" duration="6016000" />
+      <workItem from="1671565755927" duration="1954000" />
+      <workItem from="1671569426960" duration="810000" />
+      <workItem from="1671570258904" duration="1568000" />
+      <workItem from="1671572457092" duration="1467000" />
+      <workItem from="1671573997669" duration="161000" />
+      <workItem from="1671574184146" duration="1225000" />
     </task>
     <servers />
   </component>

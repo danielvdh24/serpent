@@ -47,9 +47,9 @@ public class Painter {
         gc.setTextAlign(TextAlignment.CENTER);
         gc.setTextBaseline(VPos.CENTER);
         gc.setFill(Color.ORANGERED);
-        gc.fillText("YOU DIED", canvasWidth / 2, canvasHeight / 2 - 60);
+        gc.fillText("YOU DIED", canvasWidth / 2, canvasHeight / 2 - 80);
         gc.setFill(Color.GREEN);
-        gc.fillText("Score: " + grid.scoreDisplay(), canvasWidth / 2, canvasHeight / 2 - 40);
+        gc.fillText("Score: " + grid.scoreDisplay(), canvasWidth / 2, canvasHeight / 2 - 50);
         gc.fillText("PRESS 'ENTER' TO CONTINUE", canvasWidth / 2, canvasHeight / 2 - 20);
     }
 }

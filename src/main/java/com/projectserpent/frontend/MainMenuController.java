@@ -7,11 +7,7 @@ import java.io.IOException;
 
 public class MainMenuController extends ParentController {
 
-    public ImageView startButtonHovered;
-    public ImageView startButtonNormal;
-    public ImageView leaderboardHoveredImage;
-    public ImageView leaderboardNormal;
-
+    public ImageView startButtonHovered, startButtonNormal, leaderboardHoveredImage, leaderboardNormal;
     public void initialize() {
         startButtonHovered.setVisible(false);
         leaderboardHoveredImage.setVisible(false);

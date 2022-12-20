@@ -1,22 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.LeaderboardController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png');" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.LeaderboardController">
    <children>
-      <Button layoutX="447.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#switchToMainMenu" prefHeight="38.0" prefWidth="149.0" style="-fx-background-color: Lightgreen;" text="Back to Main Menu" />
-      <TableView fx:id="leaderboardTable" layoutY="39.0" prefHeight="436.0" prefWidth="600.0">
-        <columns>
-          <TableColumn fx:id="nameColumn" prefWidth="300.0" resizable="false" text="Username" />
-          <TableColumn fx:id="scoreColumn" prefWidth="299.0" text="Score" />
-        </columns>
-      </TableView>
-      <Button layoutY="475.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="126.0" prefWidth="600.0" style="-fx-background-color: Lightgreen;" text="Start a new game" />
-      <Label alignment="CENTER" layoutX="-4.0" layoutY="1.0" prefHeight="38.0" prefWidth="451.0" style="-fx-background-color: Lightblue;" text="TOP 10 Scores" textAlignment="JUSTIFY">
-         <font>
-            <Font size="18.0" />
-         </font></Label>
+       <ImageView fx:id="backButtonNormal" fitHeight="67.0" fitWidth="125.0" layoutX="504.0" pickOnBounds="true" preserveRatio="true">
+           <image>
+               <Image url="@BackButton.png" />
+           </image>
+       </ImageView>
+      <ImageView fx:id="backButtonPressed" fitHeight="67.0" fitWidth="125.0" layoutX="504.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+              <Image url="@BackButtonPressed.png" />
+          </image>
+      </ImageView>
+       <Button layoutY="495.0" mnemonicParsing="false" onMouseClicked="#startGame" prefHeight="106.0" prefWidth="600.0" style="-fx-background-color: transparent;" text="Start a new game" />
+      <Button layoutX="543.0" layoutY="3.0" mnemonicParsing="false" onMouseClicked="#switchToMainMenu" onMouseEntered="#hoverBackButton" onMouseExited="#stopHoverBackButton" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: transparent;" />
+       <Label fx:id="titleLabel" alignment="CENTER" layoutY="-3.0" prefHeight="60.0" prefWidth="533.0" style="-fx-background-color: transparent; -fx-font-family: 'Invasion2000'; src: url('INVASION2000.TTF'); -fx-text-fill: #FF3DD1;" text="TOP Scores" textAlignment="JUSTIFY">
+           <font>
+               <Font size="70.0" />
+           </font>
+       </Label>
+       <TableView fx:id="leaderboardTable" layoutY="60.0" prefHeight="432.0" prefWidth="600.0" style="-fx-background-color: rgba(255,255,255,0); -fx-border-color: transparent;" visible="false">           <columns>
+           <TableColumn fx:id="nameColumn" prefWidth="299.1999816894531" resizable="false" style="-fx-text-fill: black; -fx-font-family: Invasion2000; -fx-background-color: transparent;" text="Username" />
+           <TableColumn fx:id="scoreColumn" minWidth="0.0" prefWidth="300.800048828125" style="-fx-text-fill: black; -fx-font-family: Invasion2000; -fx-background-color: transparent;" text="Score" />
+       </columns>
+       </TableView>
    </children>
 </Pane>

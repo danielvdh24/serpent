@@ -11,7 +11,6 @@ public class UserScore implements Comparable<UserScore> {
         this.score = score;
     }
 
-
     public String getUsername() {
         return username;
     }

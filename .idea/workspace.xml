@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="192056ea-d273-456f-abd6-49ac9a655ce5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2022-12-19_21_32__Changes_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/Grid.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/backend/UserScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/GameScreenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/GameScreenController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/LeaderboardController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/MainMenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/main-menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/main-menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/projectserpent/frontend/painter/Painter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/leaderboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/leaderboard.fxml" afterDir="false" />
     </list>
     <list id="28a680b7-bf57-4d12-bd7e-d49a00bea2f4" name="Changes by Daniel" comment="" />
     <list id="6033900c-221a-4374-b35e-2a50a3941786" name="Changes by Erik" comment="" />
@@ -123,6 +126,10 @@
       <workItem from="1671492272442" duration="555000" />
       <workItem from="1671492840015" duration="1307000" />
       <workItem from="1671499293687" duration="2506000" />
+      <workItem from="1671506001925" duration="5501000" />
+      <workItem from="1671549372077" duration="481000" />
+      <workItem from="1671549889793" duration="462000" />
+      <workItem from="1671550365206" duration="6016000" />
     </task>
     <servers />
   </component>

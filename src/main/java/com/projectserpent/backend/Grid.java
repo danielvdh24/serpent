@@ -3,6 +3,7 @@ package com.projectserpent.backend;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.paint.ImagePattern;
+import javafx.scene.text.Font;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -71,6 +72,7 @@ public class Grid {
         Image blueGrid;
         try {
             blueGrid = new Image(new FileInputStream("src/main/resources/BlackBlueGrid.png"));
+            gc.setFont(Font.loadFont(new FileInputStream("src/main/resources/INVASION2000.ttf"), 30));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }

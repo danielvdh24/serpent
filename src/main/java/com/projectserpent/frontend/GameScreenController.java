@@ -10,12 +10,12 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.input.KeyEvent;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class GameScreenController extends ParentController {
     private GameLoop loop;
     private Grid grid;
-
     public Canvas gameCanvas;
     private GraphicsContext context;
     private final int SCREEN_WIDTH = 600;
@@ -30,7 +30,6 @@ public class GameScreenController extends ParentController {
         gameCanvas.setOnKeyPressed(inputHandler);
         newGame();                            // here the game starts after pressing Start Game
         (new Thread(loop)).start();
-
     }
 
     private void newGame() {

@@ -24,10 +24,9 @@ public class LeaderboardController extends DeathScreenController {
     @FXML
     public TableColumn<String, String> nameColumn;
     private final LeaderboardList leaderboard = DeathScreenController.leaderboard;
-    public ImageView backButtonNormal;
-    public ImageView backButtonPressed;
+    public ImageView backButtonNormal, backButtonPressed;
+    public ImageView newGameButtonNormal, newGameButtonPressed;
     public Label titleLabel;
-    // public VBox scoreBox;
     public Label nameOne, nameTwo, nameThree, nameFour, nameFive, nameSix, nameSeven, nameEight, nameNine, nameTen;
     public Label scoreOne, scoreTwo, scoreThree, scoreFour, scoreFive, scoreSix, scoreSeven, scoreEight, scoreNine, scoreTen;
 
@@ -44,7 +43,7 @@ public class LeaderboardController extends DeathScreenController {
     public void initialize() {
         loadLeaderboard();
         backButtonPressed.setVisible(false);
-        Font.loadFont(getClass().getResource("/INVASION2000.TTF").toExternalForm(), 34);
+        newGameButtonPressed.setVisible(false);
         loadNameColumn();
         loadScoreColumn();
     }
@@ -56,6 +55,7 @@ public class LeaderboardController extends DeathScreenController {
         scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
         leaderboardTable.setItems(items);
     }
+
     @FXML
     public void convertToObservable(ObservableList<UserScore> list)  {
         list.addAll(leaderboard.getLeaderboard());
@@ -69,6 +69,16 @@ public class LeaderboardController extends DeathScreenController {
     public void stopHoverBackButton(MouseEvent event) {
         backButtonPressed.setVisible(false);
         backButtonNormal.setVisible(true);
+    }
+
+    public void hoverNewGameButton(MouseEvent event) {
+        newGameButtonPressed.setVisible(true);
+        newGameButtonNormal.setVisible(false);
+    }
+
+    public void stopHoverNewGameButton(MouseEvent event) {
+        newGameButtonPressed.setVisible(false);
+        newGameButtonNormal.setVisible(true);
     }
 
     public void loadNameColumn() {
@@ -96,5 +106,4 @@ public class LeaderboardController extends DeathScreenController {
         scoreNine.setText(String.valueOf(scoreColumn.getCellObservableValue(8).getValue()));
         scoreTen.setText(String.valueOf(scoreColumn.getCellObservableValue(9).getValue()));
     }
-
 }

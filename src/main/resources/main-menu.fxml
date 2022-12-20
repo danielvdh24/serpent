@@ -25,7 +25,8 @@
                 <ImageView fx:id="leaderboardHoveredImage" fitHeight="90.0" fitWidth="170.0" layoutX="218.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@LeaderboardPressed2.png" />
-                    </image></ImageView>
+                    </image>
+                </ImageView>
                 <ImageView fx:id="startButtonHovered" fitHeight="81.0" fitWidth="170.0" layoutX="217.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@StartPressed.png" />

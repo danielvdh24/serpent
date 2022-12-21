@@ -19,7 +19,7 @@
                 <Font size="21.0" />
             </font>
         </Label>
-        <Label fx:id="yourScore" alignment="CENTER" layoutX="206.0" layoutY="147.0" prefHeight="35.0" prefWidth="212.0" style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000;" textFill="WHITE">
+        <Label fx:id="yourScore" alignment="CENTER" layoutX="180.0" layoutY="147.0" prefHeight="35.0" prefWidth="269.0" style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000;" textFill="WHITE">
             <font>
                 <Font size="24.0" />
             </font>
@@ -61,6 +61,10 @@
         </ImageView>
         <Button fx:id="anonymousSaveButton" layoutX="334.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsAnonymous" onMouseEntered="#hoverAnonymousButton" onMouseExited="#stopHoverAnonymousButton" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: transparent;" />
         <Button fx:id="submitButton" layoutX="187.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsKnown" onMouseEntered="#hoverSubmitButton" onMouseExited="#stopHoverSubmitButton" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: transparent;" />
+        <Label fx:id="illegalNameLabel" layoutX="155.0" layoutY="390.0" prefHeight="35.0" prefWidth="549.0" style="-fx-text-fill: #f14255; -fx-font-family: Invasion2000;">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
 
     </children>
 </Pane>

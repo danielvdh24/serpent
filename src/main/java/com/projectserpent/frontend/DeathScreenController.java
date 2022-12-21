@@ -12,12 +12,16 @@ import javafx.scene.input.MouseEvent;
 
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class DeathScreenController extends ParentController{
     @FXML
     public Label yourScore;
     @FXML
     public TextField usernameInputField;
+
+    @FXML
+    public Label illegalNameLabel;
     private UserScore userScore;
     protected static final LeaderboardList leaderboard = new LeaderboardList();
     public ImageView submitPressed, submitButtonNormal, anonymousButton, anonymousPressed;
@@ -30,17 +34,37 @@ public class DeathScreenController extends ParentController{
         loadScore();
     }
 
-    public void saveScoreAsKnown(MouseEvent event) throws IOException {
+    public boolean saveScoreAsKnown(MouseEvent event) throws IOException {
+        if(isNameIllegal(usernameInputField.getText())) {
+            return false;
+        };
+
         userScore = new UserScore(usernameInputField.getText(), getScore());
         leaderboard.addScore(userScore);
         leaderboard.printLeaderboard();
         sceneSwitch(event, "death-screen-saved.fxml");
+        return true;
+
     }
     public void saveScoreAsAnonymous(MouseEvent event) throws IOException {
         userScore = new UserScore("Anonymous", getScore());
         leaderboard.addScore(userScore);
         leaderboard.printLeaderboard();
         sceneSwitch(event, "death-screen-saved.fxml");
+    }
+    @FXML
+    public boolean isNameIllegal(String name) {
+        if(Objects.equals(name, "")) {
+            illegalNameLabel.setText("EMPTY NAME, TRY AGAIN");
+            System.out.println("Empty name, try again");
+            return true;
+        } else if (name.length()>15) {
+            illegalNameLabel.setLayoutX(125);
+            illegalNameLabel.setText("NAME TOO LONG, TRY AGAIN");
+            System.out.println("Name too long, try again");
+            return true;
+        }
+        return false;
     }
 
     public void hoverSubmitButton(MouseEvent event) {

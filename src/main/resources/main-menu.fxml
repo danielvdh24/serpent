@@ -14,9 +14,6 @@
                     <image>
                         <Image url="@SerpentLogo.png" />
                     </image>
-                    <effect>
-                        <Reflection topOpacity="0.32" />
-                    </effect>
                 </ImageView>
                 <ImageView fx:id="leaderboardNormal" fitHeight="170.0" fitWidth="170.0" layoutX="218.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
                     <image>

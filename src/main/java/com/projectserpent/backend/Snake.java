@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class Snake {
-    public static final Color COLOR = Color.CORNSILK;
+    public static final Color COLOR = Color.LIGHTGREEN;
     public static final Color DEAD = Color.RED;
     private Grid grid;
     private int length;

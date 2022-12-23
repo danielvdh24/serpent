@@ -1,80 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-      prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png'); -fx-background-color: transparent;"
-      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.projectserpent.frontend.DeathScreenSavedController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png'); -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.DeathScreenSavedController">
     <children>
-        <Label alignment="CENTER" layoutY="40.0" prefHeight="92.0" prefWidth="600.0"
-               style="-fx-background-color: transparent; -fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000; "
-               text="THANK YOU!">
+        <Label alignment="CENTER" layoutY="40.0" prefHeight="92.0" prefWidth="600.0" style="-fx-background-color: transparent; -fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000; " text="THANK YOU!">
             <font>
-                <Font size="42.0"/>
+                <Font size="42.0" />
             </font>
         </Label>
-        <Label layoutX="75.0" layoutY="279.0" prefHeight="43.0" prefWidth="462.0"
-               style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000" text="YOUR SCORE HAS BEEN SAVED!">
+        <Label layoutX="75.0" layoutY="279.0" prefHeight="43.0" prefWidth="462.0" style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000" text="YOUR SCORE HAS BEEN SAVED!">
             <font>
-                <Font size="24.0"/>
+                <Font size="24.0" />
             </font>
         </Label>
-        <ImageView fitHeight="138.0" fitWidth="138.0" layoutX="231.0" layoutY="126.0" pickOnBounds="true"
-                   preserveRatio="true">
+        <ImageView fitHeight="138.0" fitWidth="138.0" layoutX="231.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@FrontFaceSnake.png"/>
+                <Image url="@FrontFaceSnake.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="mainMenuPressed" fitHeight="52.0" fitWidth="160.0" layoutX="354.0" layoutY="415.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="mainMenuPressed" fitHeight="52.0" fitWidth="160.0" layoutX="354.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@MainMenuPressed.png"/>
+                <Image url="@MainMenuPressed.png" />
+            </image>
+         <effect>
+            <DropShadow radius="50.3025" width="182.21">
+               <color>
+                  <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+               </color>
+            </DropShadow>
+         </effect>
+        </ImageView>
+        <ImageView fx:id="mainMenuNormal" fitHeight="52.0" fitWidth="160.0" layoutX="354.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@MainMenuButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="mainMenuNormal" fitHeight="52.0" fitWidth="160.0" layoutX="354.0" layoutY="415.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="leaderboardPressed" fitHeight="52.0" fitWidth="160.0" layoutX="215.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@MainMenuButton.png"/>
+                <Image url="@LeaderboardPressed.png" />
+            </image>
+            <effect>
+                <DropShadow radius="50.3025" width="182.21">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="leaderboardNormal" fitHeight="52.0" fitWidth="160.0" layoutX="215.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@LeaderboardButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="leaderboardPressed" fitHeight="52.0" fitWidth="160.0" layoutX="215.0" layoutY="415.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="newGamePressed" fitHeight="52.0" fitWidth="160.0" layoutX="75.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@LeaderboardPressed.png"/>
+                <Image url="@NewGamePressed.png" />
+            </image>
+            <effect>
+                <DropShadow radius="50.3025" width="182.21">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="newGameNormal" fitHeight="52.0" fitWidth="160.0" layoutX="75.0" layoutY="415.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@NewGameButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="leaderboardNormal" fitHeight="52.0" fitWidth="160.0" layoutX="215.0" layoutY="415.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@LeaderboardButton.png"/>
-            </image>
-        </ImageView>
-        <ImageView fx:id="newGamePressed" fitHeight="52.0" fitWidth="160.0" layoutX="75.0" layoutY="415.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@NewGamePressed.png"/>
-            </image>
-        </ImageView>
-        <ImageView fx:id="newGameNormal" fitHeight="52.0" fitWidth="160.0" layoutX="75.0" layoutY="415.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@NewGameButton.png"/>
-            </image>
-        </ImageView>
-        <Button fx:id="newGameButton" layoutX="96.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#startGame"
-                onMouseEntered="#hoverNewGameButton" onMouseExited="#stopHoverNewGameButton" prefHeight="43.0"
-                prefWidth="119.0" style="-fx-background-color: transparent;"/>
-        <Button fx:id="mainMenuButton" layoutX="375.0" layoutY="415.0" mnemonicParsing="false"
-                onMouseClicked="#switchToMainMenu" onMouseEntered="#hoverMainMenuButton"
-                onMouseExited="#stopHoverMainMenuButton" prefHeight="43.0" prefWidth="119.0"
-                style="-fx-background-color: transparent;"/>
-        <Button fx:id="leaderboardButton" layoutX="235.0" layoutY="415.0" mnemonicParsing="false"
-                onMouseClicked="#switchToLeaderboard" onMouseEntered="#hoverLeaderboardButton"
-                onMouseExited="#stopHoverLeaderboardButton" prefHeight="43.0" prefWidth="119.0"
-                style="-fx-background-color: transparent;"/>
+        <Button fx:id="newGameButton" layoutX="96.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#startGame" onMouseEntered="#hoverNewGameButton" onMouseExited="#stopHoverNewGameButton" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="mainMenuButton" layoutX="375.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#switchToMainMenu" onMouseEntered="#hoverMainMenuButton" onMouseExited="#stopHoverMainMenuButton" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="leaderboardButton" layoutX="235.0" layoutY="415.0" mnemonicParsing="false" onMouseClicked="#switchToLeaderboard" onMouseEntered="#hoverLeaderboardButton" onMouseExited="#stopHoverLeaderboardButton" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: transparent;" />
     </children>
 </Pane>

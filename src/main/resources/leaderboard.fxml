@@ -1,114 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-      prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png');" xmlns="http://javafx.com/javafx/17.0.2-ea"
-      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.LeaderboardController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png');" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.LeaderboardController">
     <children>
-        <ImageView fx:id="newGameButtonPressed" fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="516.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="newGameButtonPressed" fitHeight="150.0" fitWidth="200.0" layoutX="204.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@NewGamePressed.png"/>
+                <Image url="@NewGamePressed.png" />
+            </image>
+            <effect>
+                <DropShadow radius="50.3025" width="182.21">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="newGameButtonNormal" fitHeight="133.0" fitWidth="200.0" layoutX="204.0" layoutY="516.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@NewGameButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="newGameButtonNormal" fitHeight="133.0" fitWidth="200.0" layoutX="204.0" layoutY="516.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="backButtonNormal" fitHeight="67.0" fitWidth="125.0" layoutX="499.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@NewGameButton.png"/>
+                <Image url="@BackButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="backButtonNormal" fitHeight="67.0" fitWidth="125.0" layoutX="499.0" layoutY="7.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="backButtonPressed" fitHeight="67.0" fitWidth="125.0" layoutX="499.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@BackButton.png"/>
+                <Image url="@BackButtonPressed.png" />
             </image>
+            <effect>
+                <DropShadow height="101.61" radius="40.4125" width="62.04">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
         </ImageView>
-        <ImageView fx:id="backButtonPressed" fitHeight="67.0" fitWidth="125.0" layoutX="499.0" layoutY="7.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@BackButtonPressed.png"/>
-            </image>
-        </ImageView>
-        <Button layoutX="538.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#switchToMainMenu"
-                onMouseEntered="#hoverBackButton" onMouseExited="#stopHoverBackButton" prefHeight="45.0"
-                prefWidth="46.0" style="-fx-background-color: transparent;"/>
-        <TableView fx:id="leaderboardTable" layoutY="60.0" prefHeight="432.0" prefWidth="600.0"
-                   style="-fx-background-color: rgba(255,255,255,0); -fx-border-color: transparent;" visible="false">
+        <Button layoutX="538.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#switchToMainMenu" onMouseEntered="#hoverBackButton" onMouseExited="#stopHoverBackButton" prefHeight="45.0" prefWidth="46.0" style="-fx-background-color: transparent;" />
+        <TableView fx:id="leaderboardTable" layoutY="60.0" prefHeight="432.0" prefWidth="600.0" style="-fx-background-color: rgba(255,255,255,0); -fx-border-color: transparent;" visible="false">
             <columns>
-                <TableColumn fx:id="nameColumn" prefWidth="299.1999816894531" resizable="false"
-                             style="-fx-text-fill: black; -fx-font-family: Invasion2000; -fx-background-color: transparent;"
-                             text="Username"/>
-                <TableColumn fx:id="scoreColumn" minWidth="0.0" prefWidth="300.800048828125"
-                             style="-fx-text-fill: black; -fx-font-family: Invasion2000; -fx-background-color: transparent;"
-                             text="Score"/>
+                <TableColumn fx:id="nameColumn" prefWidth="299.1999816894531" resizable="false" style="-fx-text-fill: black; -fx-font-family: Invasion2000; -fx-background-color: transparent;" text="Username" />
+                <TableColumn fx:id="scoreColumn" minWidth="0.0" prefWidth="300.800048828125" style="-fx-text-fill: black; -fx-font-family: Invasion2000; -fx-background-color: transparent;" text="Score" />
             </columns>
         </TableView>
-        <Label layoutX="73.0" layoutY="121.0" prefHeight="51.0" prefWidth="238.0"
-               style="-fx-text-fill: #f14255; -fx-font-family: Invasion2000; " text="Username">
+        <Label layoutX="73.0" layoutY="121.0" prefHeight="51.0" prefWidth="238.0" style="-fx-text-fill: #f14255; -fx-font-family: Invasion2000; " text="Username">
             <font>
-                <Font size="38.0"/>
+                <Font size="38.0" />
             </font>
         </Label>
-        <Label fx:id="columnName" layoutX="378.0" layoutY="121.0" prefHeight="51.0" prefWidth="181.0"
-               style="-fx-text-fill: #f14255; -fx-font-family: Invasion2000; " text="Score">
+        <Label fx:id="columnName" layoutX="378.0" layoutY="121.0" prefHeight="51.0" prefWidth="181.0" style="-fx-text-fill: #f14255; -fx-font-family: Invasion2000; " text="Score">
             <font>
-                <Font size="38.0"/>
+                <Font size="38.0" />
             </font>
         </Label>
         <VBox layoutX="61.0" layoutY="184.0" prefHeight="405.0" prefWidth="239.0" spacing="5">
             <children>
                 <Label fx:id="nameOne" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameTwo" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameThree" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameFour" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameFive" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameSix" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameSeven" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameEight" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameNine" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="nameTen" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
             </children>
@@ -117,65 +118,60 @@
             <children>
                 <Label fx:id="scoreOne" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreTwo" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreThree" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreFour" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreFive" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreSix" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreSeven" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreEight" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
                 <Label fx:id="scoreNine" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
-                <Label fx:id="scoreTen" alignment="CENTER" contentDisplay="CENTER"
-                       style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
+                <Label fx:id="scoreTen" alignment="CENTER" contentDisplay="CENTER" style="-fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000; ">
                     <font>
-                        <Font size="25.0"/>
+                        <Font size="25.0" />
                     </font>
                 </Label>
             </children>
         </VBox>
-        <Button fx:id="newGameButton" layoutX="231.0" layoutY="516.0" mnemonicParsing="false"
-                onMouseClicked="#startGame" onMouseEntered="#hoverNewGameButton" onMouseExited="#stopHoverNewGameButton"
-                prefHeight="51.0" prefWidth="147.0" style="-fx-background-color: transparent;"/>
-        <Label fx:id="titleLabel" alignment="CENTER" layoutX="14.0" layoutY="-2.0" prefHeight="60.0" prefWidth="533.0"
-               style="-fx-background-color: transparent; -fx-font-family: 'Invasion2000'; src: url('INVASION2000.TTF'); -fx-text-fill: #FF3DD1;"
-               text="TOP Scores" textAlignment="JUSTIFY">
+        <Button fx:id="newGameButton" layoutX="231.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#startGame" onMouseEntered="#hoverNewGameButton" onMouseExited="#stopHoverNewGameButton" prefHeight="51.0" prefWidth="147.0" style="-fx-background-color: transparent;" />
+        <Label fx:id="titleLabel" alignment="CENTER" layoutX="14.0" layoutY="-2.0" prefHeight="60.0" prefWidth="533.0" style="-fx-background-color: transparent; -fx-font-family: 'Invasion2000'; src: url('INVASION2000.TTF'); -fx-text-fill: #FF3DD1;" text="TOP Scores" textAlignment="JUSTIFY">
             <font>
-                <Font size="70.0"/>
+                <Font size="70.0" />
             </font>
         </Label>
     </children>

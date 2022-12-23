@@ -1,69 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
-      prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png'); -fx-background-color: transparent;"
-      xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
-      fx:controller="com.projectserpent.frontend.DeathScreenController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-image: url('MainMenuBG.png'); -fx-background-color: transparent;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.projectserpent.frontend.DeathScreenController">
     <children>
-        <Label alignment="CENTER" layoutY="14.0" prefHeight="92.0" prefWidth="600.0"
-               style="-fx-background-color: transparent; -fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000; "
-               text="SAVE YOUR SCORE">
+        <Label alignment="CENTER" layoutY="14.0" prefHeight="92.0" prefWidth="600.0" style="-fx-background-color: transparent; -fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000; " text="SAVE YOUR SCORE">
             <font>
-                <Font size="42.0"/>
+                <Font size="42.0" />
             </font>
         </Label>
-        <Label layoutX="155.0" layoutY="246.0" prefHeight="35.0" prefWidth="313.0"
-               style="-fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000;" text="ENTER YOUR NAME BELOW"
-               textFill="WHITE">
+        <Label layoutX="155.0" layoutY="246.0" prefHeight="35.0" prefWidth="313.0" style="-fx-text-fill: #FF3DD1; -fx-font-family: Invasion2000;" text="ENTER YOUR NAME BELOW" textFill="WHITE">
             <font>
-                <Font size="21.0"/>
+                <Font size="21.0" />
             </font>
         </Label>
-        <Label fx:id="yourScore" alignment="CENTER" layoutX="206.0" layoutY="147.0" prefHeight="35.0" prefWidth="212.0"
-               style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000;" textFill="WHITE">
+        <Label fx:id="yourScore" alignment="CENTER" layoutX="180.0" layoutY="147.0" prefHeight="35.0" prefWidth="269.0" style="-fx-text-fill: #62fa62; -fx-font-family: Invasion2000;" textFill="WHITE">
             <font>
-                <Font size="24.0"/>
+                <Font size="24.0" />
             </font>
         </Label>
-        <TextField fx:id="usernameInputField" layoutX="155.0" layoutY="288.0" prefHeight="25.0" prefWidth="313.0"
-                   style="-fx-background-color: rgba(69,8,238,0.36); -fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000;"/>
-        <ImageView fx:id="anonymousPressed" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <TextField fx:id="usernameInputField" layoutX="155.0" layoutY="288.0" prefHeight="25.0" prefWidth="313.0" style="-fx-background-color: rgba(69,8,238,0.36); -fx-text-fill: #2ef6e5; -fx-font-family: Invasion2000;" />
+        <ImageView fx:id="anonymousPressed" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@AnonymousPressed.png"/>
+                <Image url="@AnonymousPressed.png" />
+            </image>
+            <effect>
+                <DropShadow height="84.02" radius="47.7375" width="108.93">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="anonymousButton" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@AnonymousButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="anonymousButton" fitHeight="43.0" fitWidth="132.0" layoutX="317.0" layoutY="326.0"
-                   pickOnBounds="true" preserveRatio="true">
+        <ImageView fx:id="submitPressed" fitHeight="43.0" fitWidth="141.0" layoutX="168.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@AnonymousButton.png"/>
+                <Image url="@SubmitPressed.png" />
+            </image>
+            <effect>
+                <DropShadow height="84.02" radius="47.7375" width="108.93">
+                    <color>
+                        <Color red="0.3211419880390167" green="1.0" blue="0.23148147761821747" />
+                    </color>
+                </DropShadow>
+            </effect>
+        </ImageView>
+        <ImageView fx:id="submitButtonNormal" fitHeight="43.0" fitWidth="132.0" layoutX="168.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@SubmitButton.png" />
             </image>
         </ImageView>
-        <ImageView fx:id="submitPressed" fitHeight="43.0" fitWidth="141.0" layoutX="168.0" layoutY="326.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@SubmitPressed.png"/>
-            </image>
-        </ImageView>
-        <ImageView fx:id="submitButtonNormal" fitHeight="43.0" fitWidth="132.0" layoutX="168.0" layoutY="326.0"
-                   pickOnBounds="true" preserveRatio="true">
-            <image>
-                <Image url="@SubmitButton.png"/>
-            </image>
-        </ImageView>
-        <Button fx:id="anonymousSaveButton" layoutX="334.0" layoutY="326.0" mnemonicParsing="false"
-                onMouseClicked="#saveScoreAsAnonymous" onMouseEntered="#hoverAnonymousButton"
-                onMouseExited="#stopHoverAnonymousButton" prefHeight="35.0" prefWidth="98.0"
-                style="-fx-background-color: transparent;"/>
-        <Button fx:id="submitButton" layoutX="187.0" layoutY="326.0" mnemonicParsing="false"
-                onMouseClicked="#saveScoreAsKnown" onMouseEntered="#hoverSubmitButton"
-                onMouseExited="#stopHoverSubmitButton" prefHeight="35.0" prefWidth="98.0"
-                style="-fx-background-color: transparent;"/>
+        <Button fx:id="anonymousSaveButton" layoutX="334.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsAnonymous" onMouseEntered="#hoverAnonymousButton" onMouseExited="#stopHoverAnonymousButton" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: transparent;" />
+        <Button fx:id="submitButton" layoutX="187.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#saveScoreAsKnown" onMouseEntered="#hoverSubmitButton" onMouseExited="#stopHoverSubmitButton" prefHeight="35.0" prefWidth="98.0" style="-fx-background-color: transparent;" />
+        <Label fx:id="illegalNameLabel" layoutX="155.0" layoutY="390.0" prefHeight="35.0" prefWidth="549.0" style="-fx-text-fill: #f14255; -fx-font-family: Invasion2000;">
+            <font>
+                <Font size="24.0" />
+            </font></Label>
 
     </children>
 </Pane>

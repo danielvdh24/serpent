@@ -1,0 +1,13 @@
+Index: src/main/resources/leaderboard.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/resources/leaderboard.json b/src/main/resources/leaderboard.json
+--- a/src/main/resources/leaderboard.json	
++++ b/src/main/resources/leaderboard.json	
+@@ -1,1 +1,1 @@
+-[{"username":"Erik Nisbet","score":52},{"username":"Asim","score":51},{"username":"Anonymous","score":20},{"username":"Anonymous","score":11},{"username":"Anonymous","score":7},{"username":"Anonymous","score":6},{"username":"Anonymous","score":6},{"username":"Anonymous","score":6},{"username":"Anonymous","score":5},{"username":"Anonymous","score":5}]
+\ No newline at end of file
++[{"username":"Erik Nisbet","score":52},{"username":"Asim","score":51},{"username":"Anonymous","score":20},{"username":"Anonymous","score":11},{"username":"Anonymous","score":7},{"username":"Anonymous","score":7},{"username":"Anonymous","score":6},{"username":"Anonymous","score":6},{"username":"Anonymous","score":6},{"username":"Anonymous","score":5}]
+\ No newline at end of file

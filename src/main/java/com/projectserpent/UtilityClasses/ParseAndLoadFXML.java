@@ -14,13 +14,12 @@ public final class ParseAndLoadFXML {
     private ParseAndLoadFXML() {
     }
     // returns loaded fxml
-    public static <T> T returnFxmlFile(String filename) throws IOException {
+    public static Object returnFxmlFile(String filename) throws IOException {
         return FXMLLoader.load(getFxmlUrl(filename));
     }
     /* method uses classloader to find location of FXML urls
      */
     public static URL getFxmlUrl(String url) {
-        requireNonNull(url);
         ClassLoader fxml = ParseAndLoadFXML.class.getClassLoader();
         return fxml.getResource(url);
     }

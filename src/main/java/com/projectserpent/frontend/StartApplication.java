@@ -28,8 +28,6 @@ public final class StartApplication extends Application {
         primaryStage.getIcons().add(new Image((new FileInputStream("src/main/resources/Icon.png"))));
         primaryStage.setTitle("Serpent");
         primaryStage.setScene(scene);
-        // We need to implement a way to force the game to close when the exit button is clicked, as it sometimes
-        // continues to run in the IDE even after the button is pressed.
         primaryStage.setOnCloseRequest(e -> System.exit(0));
         primaryStage.show();
     }

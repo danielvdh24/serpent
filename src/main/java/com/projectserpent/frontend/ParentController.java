@@ -16,7 +16,7 @@ public  class ParentController {
     This method is called to redirect to a different scene
      */
     protected void sceneSwitch(Event event, String fxmlName) throws IOException {
-        Parent fxmlFile = ParseAndLoadFXML.returnFxmlFile(fxmlName);
+        Parent fxmlFile = (Parent) ParseAndLoadFXML.returnFxmlFile(fxmlName);
         Scene scene = new Scene(fxmlFile);
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);

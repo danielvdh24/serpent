@@ -9,6 +9,10 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/***
+ * Parent in controller hierarchy so children can re-use sceneSwitch method.
+ */
+
 public  class ParentController {
 
     private static int score;

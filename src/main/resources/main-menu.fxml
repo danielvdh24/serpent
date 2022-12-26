@@ -20,7 +20,7 @@
                         <Image url="@LeaderboardButton2.png" />
                     </image>
                 </ImageView>
-                <ImageView fx:id="leaderboardHoveredImage" fitHeight="90.0" fitWidth="170.0" layoutX="218.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
+                <ImageView fx:id="leaderboardHovered" fitHeight="90.0" fitWidth="170.0" layoutX="218.0" layoutY="426.0" pickOnBounds="true" preserveRatio="true">
                     <image>
                         <Image url="@LeaderboardPressed2.png" />
                     </image>

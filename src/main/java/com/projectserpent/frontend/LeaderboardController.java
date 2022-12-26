@@ -14,6 +14,10 @@ import javafx.scene.input.MouseEvent;
 
 import java.io.IOException;
 
+/***
+ * Controller for leaderboard.
+ */
+
 public class LeaderboardController extends DeathScreenController {
     @FXML
     public TableView<UserScore> leaderboardTable;
@@ -28,15 +32,7 @@ public class LeaderboardController extends DeathScreenController {
     public Label nameOne, nameTwo, nameThree, nameFour, nameFive, nameSix, nameSeven, nameEight, nameNine, nameTen;
     public Label scoreOne, scoreTwo, scoreThree, scoreFour, scoreFive, scoreSix, scoreSeven, scoreEight, scoreNine, scoreTen;
 
-    @FXML
-    public void switchToMainMenu(MouseEvent event) throws IOException {
-        sceneSwitch(event, "main-menu.fxml");
-    }
-    @FXML
-    public void startGame(MouseEvent event) throws IOException {
-        sceneSwitch(event, "game-screen.fxml");
-    }
-
+    //Initializes leaderboard and hover animation logic
     @FXML
     public void initialize() {
         loadLeaderboard();
@@ -45,7 +41,18 @@ public class LeaderboardController extends DeathScreenController {
         loadNameColumn();
         loadScoreColumn();
     }
-
+    //Method is called when "Main Menu" button is pressed.
+    @FXML
+    public void switchToMainMenu(MouseEvent event) throws IOException {
+        sceneSwitch(event, "main-menu.fxml");
+    }
+    //Method is called when "Start Game" button is pressed-
+    @FXML
+    public void startGame(MouseEvent event) throws IOException {
+        sceneSwitch(event, "game-screen.fxml");
+    }
+    //Part of logic to display leaderboard.
+    @FXML
     public void loadLeaderboard() {
         ObservableList<UserScore> items = FXCollections.observableArrayList();
         convertToObservable(items);
@@ -53,12 +60,14 @@ public class LeaderboardController extends DeathScreenController {
         scoreColumn.setCellValueFactory(new PropertyValueFactory<>("score"));
         leaderboardTable.setItems(items);
     }
-
+    //Part of logic to display leaderboard.
     @FXML
     public void convertToObservable(ObservableList<UserScore> list)  {
         list.addAll(leaderboard.getLeaderboard());
     }
-
+    /*
+    Hover animation methods
+     */
     public void hoverBackButton(MouseEvent event) {
         backButtonPressed.setVisible(true);
         backButtonNormal.setVisible(false);
@@ -79,6 +88,9 @@ public class LeaderboardController extends DeathScreenController {
         newGameButtonNormal.setVisible(true);
     }
 
+    /*
+    Methods loading columns into labels.
+     */
     public void loadNameColumn() {
         nameOne.setText(nameColumn.getCellObservableValue(0).getValue());
         nameTwo.setText(nameColumn.getCellObservableValue(1).getValue());

@@ -6,27 +6,30 @@ import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
-import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.InputStream;
 
 public final class StartApplication extends Application {
     @Override
     public void init(){
         LeaderboardList leaderboard = new LeaderboardList();
         leaderboard.loadJson();
-        Font.loadFont(getClass().getResource("/INVASION2000.TTF").toExternalForm(), 34);
     }
 
     @Override
-    public void start(Stage primaryStage) throws IOException {
-        Object mainMenu = ParseAndLoadFXML.returnFxmlFile("main-menu.fxml");
-        Scene scene = new Scene((Parent) mainMenu);
+    public void start(Stage primaryStage) throws Exception {
+        Parent mainMenu = (Parent) ParseAndLoadFXML.returnFxmlFile("main-menu.fxml");
+        Scene scene = new Scene(mainMenu);
         primaryStage.setResizable(false);
-        primaryStage.getIcons().add(new Image((new FileInputStream("src/main/resources/Icon.png"))));
-        primaryStage.setTitle("Serpent");
+
+        // Load icon safely
+        InputStream iconStream = getClass().getResourceAsStream("/Icon.png");
+        if (iconStream != null) {
+            primaryStage.getIcons().add(new Image(iconStream));
+        }
+
+        primaryStage.setTitle("Serpent Game");
         primaryStage.setScene(scene);
         primaryStage.setOnCloseRequest(e -> System.exit(0));
         primaryStage.show();

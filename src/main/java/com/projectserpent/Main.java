@@ -1,6 +1,5 @@
 package com.projectserpent;
 
-
 import com.projectserpent.frontend.StartApplication;
 
 public class Main {

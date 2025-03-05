@@ -59,10 +59,6 @@ Make sure the path to JavaFX SDK is correct based on where you placed it.
       <br/><sub><b>Marko</b></sub><br>@mojsov
     </td>
     <td align="center" style="height: 180px; text-align: center;">
-      <img src="https://secure.gravatar.com/avatar/9890e58b0957bc5f73b568160ee6d16580e4a94223897bcb83fa0698f03c6a3b?s=384&d=identicon" width="100px;"/>
-      <br/><sub><b>Vilmer</b></sub><br>@vilmerh
-    </td>
-    <td align="center" style="height: 180px; text-align: center;">
       <img src="https://secure.gravatar.com/avatar/3056b6827d3d959ea87306c4d2dd0c6a?s=800&d=identicon" width="100px;"/>
       <br/><sub><b>Daniel</b></sub><br>@heuvel
     </td>

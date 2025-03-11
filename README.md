@@ -6,7 +6,7 @@ Serpent is a classic snake game built with JavaFX and Maven. This project was de
 
 ### Features
 - Smooth movement & collision detection
-- Classic Snake mechanics with score tracking
+- Classic snake mechanics with score tracking
 - JavaFX UI with animations
 - Modular and maintainable game logic
 
@@ -15,7 +15,7 @@ Before running the game, ensure you have:
 - Java 17 or later installed (`java -version` to check).  
 - Maven installed (`mvn -version` to check).  
 - JavaFX SDK 17, which you can download from:  
-  👉 [https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/)
+    [https://gluonhq.com/products/javafx/](https://gluonhq.com/products/javafx/)
 
 ### Project Setup
 1. Download and extract JavaFX SDK 17
